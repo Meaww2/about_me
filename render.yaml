@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: my-profile-site
+    env: static
+    staticPublishPath: out
+    buildCommand: |
+      corepack enable
+      pnpm install
+      pnpm build
+    branch: main
